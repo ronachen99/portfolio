@@ -1,11 +1,13 @@
+// import React library and components
 import React, { useState } from "react";
-import NavTabs from "./components/NavTabs";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
+// render different page depending what is being passed to the handlePageChange function from the header.js component and set it as the current page
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
 
@@ -21,11 +23,12 @@ function App() {
     }
     return <Resume />;
   };
+
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
     </div>
