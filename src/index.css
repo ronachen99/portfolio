@@ -5,12 +5,20 @@
 
 /* add css rules for all components */
 * {
-    background-color: rgb(38, 38, 38);
+    font-family: 'Fira Mono', monospace;
+    background-color: #111827;
+    cursor: grab;
+}
+
+h1,
+h2 {
+    font-family: 'VT323', monospace;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 li {
