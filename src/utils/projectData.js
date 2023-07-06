@@ -45,11 +45,19 @@ export const projects = [
     "A website that enables people to enhance their understanding of JavaScript basics by taking a timed quiz."
   ),
   new Project(
+    "Tech Blog",
+    "https://techy-bloggy-d7f528e7d6af.herokuapp.com/",
+    "ronachen99/tech-blog",
+    "5.png",
+    "Screenshot of the tech blog website.",
+    "A website where users can connect, interact, and exchange information on various tech-related topics, fostering a sense of community among like-minded individuals."
+  ),
+  new Project(
     "Placeholder Project",
     "https://www.youtube.com/watch?v=8Go6dHuylyM&ab_channel=Speeds30",
     "ronachen99",
     "6.jpg",
     "Anime girl digital art staring at the city landscape.",
-    "A website where users can connect, interact, and exchange information on various tech-related topics, fostering a sense of community among like-minded individuals."
+    "This is a placeholder project."
   ),
 ];

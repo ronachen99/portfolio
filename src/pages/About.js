@@ -2,29 +2,29 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col m-8 space-y-8 items-center">
       <h2 className="flex m-8 rounded-lg justify-center text-6xl px-4 py-2 text-green-600 bg-gray-800">
         about_me
       </h2>
-      <div className="flex flex-col items-center">
-        <div className="flex space-x-4">
-          <div className="rounded-lg overflow-hidden">
+      <div className="flex flex-col space-y-8 items-center">
+        <div className="flex space-x-8">
+          <div className="rounded-lg overflow-hidden bg-gray-800 p-8">
             <img
               src="./images/S1.jpg"
               alt="Rona and Yuki"
-              className="w-64 h-auto"
+              className="w-64 h-auto cursor-not-allowed"
             />
           </div>
-          <div className="rounded-lg overflow-hidden">
+          <div className="rounded-lg overflow-hidden bg-gray-800 p-8">
             <img
               src="./images/S2.jpg"
               alt="Rona and Sesame"
-              className="w-64 h-auto"
+              className="w-64 h-auto cursor-not-allowed"
             />
           </div>
         </div>
         <div>
-          <p className="flex m-8 rounded-lg justify-center text-lg text-justify px-4 py-2 text-green-600 bg-gray-800">
+          <p className="flex rounded-lg justify-center max-w-2xl text-lg text-justify px-4 py-2 text-green-600 bg-gray-800">
             Greetings! I'm Rona, a fullstack developer and work-in-progress
             minimalist. Two lovely feline companions share my life: Sesame
             (left), a male blue Korat, and Yuki (right), a female blue-point

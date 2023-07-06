@@ -6,12 +6,17 @@
 /* add css rules for all components */
 * {
     font-family: 'Fira Mono', monospace;
-    background-color: #111827;
+
     cursor: grab;
 }
 
+body {
+    background-color: #111827;
+}
+
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'VT323', monospace;
 }
 
