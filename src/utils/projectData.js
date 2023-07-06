@@ -1,3 +1,4 @@
+// create the project class to dynamically render the array of project objects in the portfolio component
 class Project {
   constructor(title, website, repo, imageSrc, altText, description) {
     this.title = title;
@@ -9,6 +10,7 @@ class Project {
   }
 }
 
+// hardcoded project data
 export const projects = [
   new Project(
     "Anime Watchlist",
