@@ -51,36 +51,84 @@ function Contact() {
   };
 
   return (
-    <div>
-      <form className="form">
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Banana Cat"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="bananacat@gmail.com"
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          rows={4}
-          placeholder="I would like to know..."
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Send
-        </button>
+    <div className="flex flex-col m-8 space-y-8 items-center">
+      <h2 className="flex m-8 rounded-lg justify-center text-6xl px-4 py-2 text-green-600 bg-gray-800">
+        contact_me
+      </h2>
+      <form>
+        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div className="sm:col-span-3">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium leading-6 text-gray-200"
+            >
+              first_and_last_name
+            </label>
+            <div className="mt-2">
+              <input
+                value={name}
+                name="name"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="Banana Cat"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-3">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-gray-200"
+            >
+              valid_email
+            </label>
+            <div className="mt-2">
+              <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="bananacat@gmail.com"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900
+              shadow-sm ring-1 ring-inset ring-gray-300
+              placeholder:text-gray-400 focus:ring-2 focus:ring-inset
+              focus:ring-green-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-6">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-gray-200"
+            >
+              your_message
+            </label>
+            <div className="mt-2">
+              <textarea
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                rows={4}
+                placeholder="I would like to know..."
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900
+              shadow-sm ring-1 ring-inset ring-gray-300
+              placeholder:text-gray-400 focus:ring-2 focus:ring-inset
+              focus:ring-green-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            className="bg-gray-800 text-green-600 rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white"
+            onClick={handleFormSubmit}
+          >
+            send_email
+          </button>
+        </div>
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className="text-green-600">{errorMessage}</p>
         </div>
       )}
     </div>
