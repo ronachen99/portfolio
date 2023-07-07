@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-
-// Here we import a helper function that will check if the email is valid
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import { validateEmail } from "../utils/helpers";
 
 function Contact() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, name, and password
     if (inputType === "name") {
       setName(inputValue);
     } else if (inputType === "email") {
@@ -25,11 +20,11 @@ function Contact() {
     } else setMessage(inputValue);
   };
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the name is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
       setErrorMessage("._. i think... something is wrong with your email");
       return;
@@ -40,14 +35,28 @@ function Contact() {
       setErrorMessage("._. i can't reply to an empty message");
       return;
     }
-    // We want to exit out of this code block if something is wrong so that the user can correct it
 
-    alert(`Thank you ${name}! I will get back to your email ASAP!`);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName("");
-    setEmail("");
-    setMessage("");
+    emailjs
+      .sendForm(
+        "service_azh9bqr",
+        "template_7ge2zuc",
+        form.current,
+        "KickBnWaloU9Ti4kT"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(`Thank you ${name}! I will get back to your email ASAP!`);
+          form.current.reset();
+          setName("");
+          setEmail("");
+          setMessage("");
+          setErrorMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -55,7 +64,7 @@ function Contact() {
       <h2 className="flex m-8 rounded-lg justify-center text-6xl px-4 py-2 text-green-600 bg-gray-800">
         contact_me
       </h2>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
           <div className="sm:col-span-3">
             <label
@@ -118,9 +127,8 @@ function Contact() {
             </div>
           </div>
           <button
-            type="button"
+            type="submit"
             className="bg-gray-800 text-green-600 rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white"
-            onClick={handleFormSubmit}
           >
             send_email
           </button>
