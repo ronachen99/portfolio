@@ -13,7 +13,7 @@ export default function Resume() {
           <SiAdobeacrobatreader className="cursor-pointer" />
         </a>
       </h3>
-      <div className="flex flex-row space-x-8">
+      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
         <div className="space-y-8 bg-gray-800 rounded-lg px-4 py-2 text-gray-500">
           <h3 className="text-green-600 text-4xl">frontend_proficiencies</h3>
           <ul>

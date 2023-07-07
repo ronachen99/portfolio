@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Rona Chen's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![MIT License](https://img.shields.io/badge/license-MIT%20License-black.svg)
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The objective of establishing this repository is to construct a personalized portfolio website that introduces oneself and showcases accomplished projects. This initiative serves as an efficacious method for potential employers to acquire a comprehensive understanding of one's competencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Note: Due to an insufficient number of completed projects to showcase, placeholder images have been utilized in the project section of the webpage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Demonstration](#demonstration)
+- [Deployed Webpage](#deployed-webpage)
+- [Technology](#technology)
+- [Installation](#installation)
+- [Credits](#credits)
+- [License](#license)
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demonstration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Application Demonstration:\
+Watch it on [Google Drive](https://drive.google.com/file/d/1TRapgaW_znpTEbq26EEXu-BQnWKEBvnV/view)🖥️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Application Preview:
 
-### `npm run eject`
+![User going through the interactive portfolio and starting over.](gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Homepage of the portfolio on a desktop.](./public/images/P1.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Homepage of the portfolio on a phone.](./public/images/P2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployed Webpage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Click on the computer [🖥️](link to site) to visit the site.
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technology
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application utilizes a range of technogies to delivere its functionality. These include:
 
-### Code Splitting
+- Back-End Technologies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  - Node.js
 
-### Analyzing the Bundle Size
+- Front-End Technology:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  - React
+  - Tailwind CSS
 
-### Making a Progressive Web App
+- Deployment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  - GitHub
 
-### Advanced Configuration
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Installation
 
-### Deployment
+No installation prerequisites are necessary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application incorporated an external resource called Tailwind CSS to improve the visual attractiveness of the webpage and streamline its deployment. It relies on dependencies such as Node.js and GitHub Pages to achieve this.
+
+<br>
+
+## License
+
+Please refer to the [LICENSE](https://github.com/ronachen99/portfolio/blob/main/LICENSE) document.
