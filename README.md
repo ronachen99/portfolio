@@ -48,7 +48,7 @@ Application Preview:
 
 ## Deployed Webpage
 
-Click on the computer [🖥️](link to site) to visit the site.
+Click on the computer [🖥️](https://ronachen99.github.io/portfolio/) to visit the site.
 
 <br>
 
