@@ -32,11 +32,19 @@ Watch it on [Google Drive](https://drive.google.com/file/d/1TRapgaW_znpTEbq26EEX
 
 Application Preview:
 
-![User going through the interactive portfolio and starting over.](gif)
+![User going through the interactive portfolio website and starting over.](./public/images/portfolio.gif)
 
-![Homepage of the portfolio on a desktop.](./public/images/P1.png)
+![Landing page of the portfolio website on a desktop.](./public/images/P1.png)
 
-![Homepage of the portfolio on a phone.](./public/images/P2.png)
+![Portfolio page of the portfolio website on a desktop.](./public/images/P2.png)
+
+![Portfolio page of the portfolio website on a smaller screen.](./public/images/P3.png)
+
+![Contact page of the portfolio website on a desktop.](./public/images/P4.png)
+
+![Contact page of the portfolio website on a smaller screen.](./public/images/P5.png)
+
+![Resume page of the portfolio website on a desktop.](./public/images/P5.png)
 
 ## Deployed Webpage
 
