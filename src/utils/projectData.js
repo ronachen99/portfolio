@@ -53,11 +53,11 @@ export const projects = [
     "A website where users can connect, interact, and exchange information on various tech-related topics, fostering a sense of community among like-minded individuals."
   ),
   new Project(
-    "Placeholder Project",
-    "https://www.youtube.com/watch?v=8Go6dHuylyM&ab_channel=Speeds30",
-    "ronachen99",
+    "Petopia: Pawesome Companions",
+    "https://intense-sierra-89896-223bb459cf81.herokuapp.com/",
+    "ronachen99/petopia-pawesome-companions",
     "6.jpg",
-    "Anime girl digital art staring at the city landscape.",
-    "This is a placeholder project."
+    "A Canadian astronaut cat.",
+    "A virtual pet app is designed to bring the joy of pet ownership to users through an interactive experience."
   ),
 ];
