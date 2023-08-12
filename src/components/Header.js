@@ -11,8 +11,8 @@ function Header({ currentPage, handlePageChange }) {
     // pass the current page as arg to the handlePageChange function
 
     <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-      <h1 className="flex m-8 rounded-lg justify-center text-7xl px-4 py-2 text-green-600 bg-gray-800">
-        rona_s_portfolio
+      <h1 className="flex m-8 rounded-lg justify-center text-7xl px-4 py-2 text-indigo-600 bg-zinc-800 bg-opacity-75">
+        rona_chen
       </h1>
       <div className="flex m-8">
         <ul className="flex space-x-4 text-lg">
@@ -22,11 +22,11 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange("About")}
               className={`${
                 currentPage === "About"
-                  ? "bg-green-600 text-white"
-                  : "bg-gray-800 text-green-600"
-              } rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white`}
+                  ? "bg-opacity-75 bg-indigo-600 text-white"
+                  : "bg-opacity-75 bg-zinc-800 text-indigo-600"
+              } rounded-lg px-4 py-2 hover:bg-indigo-500 hover:text-white`}
             >
-              about_me
+              about
             </a>
           </li>
           <li>
@@ -35,9 +35,9 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange("Portfolio")}
               className={`${
                 currentPage === "Portfolio"
-                  ? "bg-green-600 text-white"
-                  : "bg-gray-800 text-green-600"
-              } rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white`}
+                  ? "bg-opacity-75 bg-indigo-600 text-white"
+                  : "bg-opacity-75 bg-zinc-800 text-indigo-600"
+              } rounded-lg px-4 py-2 hover:bg-indigo-500 hover:text-white`}
             >
               portfolio
             </a>
@@ -48,9 +48,9 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange("Contact")}
               className={`${
                 currentPage === "Contact"
-                  ? "bg-green-600 text-white"
-                  : "bg-gray-800 text-green-600"
-              } rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white`}
+                  ? " bg-opacity-75 bg-indigo-600 text-white"
+                  : "bg-opacity-75 bg-zinc-800 text-indigo-600"
+              } rounded-lg px-4 py-2 hover:bg-indigo-500 hover:text-white`}
             >
               contact
             </a>
@@ -61,9 +61,9 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange("Resume")}
               className={`${
                 currentPage === "Resume"
-                  ? "bg-green-600 text-white"
-                  : "bg-gray-800 text-green-600"
-              } rounded-lg px-4 py-2 hover:bg-green-500 hover:text-white`}
+                  ? "bg-opacity-75 bg-indigo-600 text-white"
+                  : "bg-opacity-75 bg-zinc-800 text-indigo-600"
+              } rounded-lg px-4 py-2 hover:bg-indigo-500 hover:text-white`}
             >
               resume
             </a>
